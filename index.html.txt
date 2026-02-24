@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+
+<title>AgriMitra Schemes</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(180deg,#a8d5c2,#6aa84f);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.card{
+background:rgba(255,255,255,0.2);
+padding:40px;
+border-radius:20px;
+text-align:center;
+width:600px;
+}
+
+.logo{
+font-size:50px;
+}
+
+.title{
+font-size:35px;
+font-weight:bold;
+}
+
+.subtitle{
+font-size:20px;
+margin-bottom:20px;
+}
+
+a{
+display:block;
+margin:10px;
+font-size:18px;
+color:blue;
+text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="logo">🌱</div>
+
+<div class="title">AgriMitra</div>
+
+<div class="subtitle">Government Schemes</div>
+
+<a href="https://pmkisan.gov.in/" target="_blank">PM Kisan Yojana</a>
+
+<a href="https://pmfby.gov.in/" target="_blank">PM Fasal Bima Yojana</a>
+
+<a href="https://mkisan.gov.in/" target="_blank">mKisan</a>
+
+<a href="https://soilhealth.dac.gov.in/" target="_blank">Soil Health Card</a>
+
+<a href="https://agriinfra.dac.gov.in/" target="_blank">Agriculture Infrastructure Fund</a>
+
+</div>
+
+</body>
+</html>
