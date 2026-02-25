@@ -1,192 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>AgriMitra Schemes</title>
+<title>AgriMitra - Government Schemes</title>
 
 <style>
 
 body{
-
 margin:0;
 font-family:'Segoe UI',sans-serif;
-
 background:linear-gradient(135deg,#a8e6cf,#6aa84f);
-
-min-height:100vh;
-
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-
+color:#064;
+text-align:center;
+padding:40px 20px;
 }
 
-/* LOGO */
-
+/* Logo */
 .logo{
-
 font-size:70px;
 animation:float 3s ease-in-out infinite;
-
 }
 
-@keyframes float{
-
-0%,100%{transform:translateY(0);}
-50%{transform:translateY(-10px);}
-
+/* Title */
+h1{
+font-size:45px;
+margin:10px 0;
 }
 
-/* TITLE */
-
-.title{
-
-font-size:48px;
-font-weight:bold;
-color:#064;
-
-margin-top:10px;
-
-}
-
-/* SUBTITLE */
-
-.subtitle{
-
-font-size:20px;
-color:#033;
+h3{
+font-weight:400;
 margin-bottom:40px;
-
 }
 
-/* GRID */
-
-.grid{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-gap:20px;
-
-width:80%;
-max-width:800px;
-
-}
-
-/* CARD */
-
-.card{
-
-background:rgba(255,255,255,0.85);
-
-padding:18px;
-
-border-radius:15px;
-
-text-decoration:none;
-
+/* Scheme links */
+.scheme{
+display:block;
+margin:15px auto;
+width:320px;
+padding:15px;
+border-radius:30px;
+background:white;
 color:#064;
-
 font-weight:600;
-
-font-size:18px;
-
-text-align:center;
-
-box-shadow:0 5px 15px rgba(0,0,0,0.15);
-
+text-decoration:none;
 transition:0.3s;
-
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
 }
 
-/* HOVER EFFECT */
-
-.card:hover{
-
-transform:translateY(-5px) scale(1.05);
-
-background:#ffffff;
-
-box-shadow:0 10px 25px rgba(0,0,0,0.25);
-
+.scheme:hover{
+transform:translateY(-5px);
+background:#e8f5e9;
 }
 
-/* FOOTER */
-
+/* Footer */
 .footer{
-
 margin-top:40px;
-color:#033;
 font-size:14px;
+color:#033;
+}
 
+/* Floating animation */
+@keyframes float{
+0%{transform:translateY(0px);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0px);}
 }
 
 </style>
-
 </head>
 
 <body>
 
 <div class="logo">🌱</div>
 
-<div class="title">AgriMitra</div>
+<h1>AgriMitra</h1>
+<h3>Government Schemes for Farmers</h3>
 
-<div class="subtitle">Government Schemes for Farmers</div>
+<a class="scheme" href="https://pmkisan.gov.in/" target="_blank">💰 PM Kisan Yojana</a>
 
+<a class="scheme" href="https://pmfby.gov.in/" target="_blank">🌾 PM Fasal Bima Yojana</a>
 
-<div class="grid">
+<a class="scheme" href="https://mkisan.gov.in/" target="_blank">📱 mKisan Portal</a>
 
-<a class="card" href="https://pmkisan.gov.in/" target="_blank">
-💰 PM Kisan Yojana
-</a>
+<a class="scheme" href="https://soilhealth.dac.gov.in/" target="_blank">🧪 Soil Health Card</a>
 
-<a class="card" href="https://pmfby.gov.in/" target="_blank">
-🌾 PM Fasal Bima Yojana
-</a>
+<a class="scheme" href="https://agriinfra.dac.gov.in/" target="_blank">🏗 Agriculture Infrastructure Fund</a>
 
-<a class="card" href="https://mkisan.gov.in/" target="_blank">
-📱 mKisan Portal
-</a>
+<a class="scheme" href="https://enam.gov.in/" target="_blank">🛒 e-NAM Market</a>
 
-<a class="card" href="https://soilhealth.dac.gov.in/" target="_blank">
-🧪 Soil Health Card
-</a>
+<a class="scheme" href="https://kcc.gov.in/" target="_blank">💳 Kisan Credit Card</a>
 
-<a class="card" href="https://agriinfra.dac.gov.in/" target="_blank">
-🏗 Agriculture Infrastructure Fund
-</a>
+<a class="scheme" href="https://pmksy.gov.in/" target="_blank">💧 PM Krishi Sinchai Yojana</a>
 
-<a class="card" href="https://enam.gov.in/" target="_blank">
-🛒 e-NAM Market
-</a>
-
-<a class="card" href="https://agricoop.nic.in/" target="_blank">
-🌿 Agriculture Cooperation
-</a>
-
-<a class="card" href="https://kcc.gov.in/" target="_blank">
-💳 Kisan Credit Card
-</a>
-
-<a class="card" href="https://pmksy.gov.in/" target="_blank">
-💧 PM Krishi Sinchai Yojana
-</a>
-
-<a class="card" href="https://rkvy.nic.in/" target="_blank">
-🚜 Rashtriya Krishi Vikas Yojana
-</a>
-
-</div>
-
+<a class="scheme" href="https://rkvy.nic.in/" target="_blank">🚜 Rashtriya Krishi Vikas Yojana</a>
 
 <div class="footer">
-
 AgriMitra © 2026 | Farmer Support System
-
 </div>
 
 </body>
