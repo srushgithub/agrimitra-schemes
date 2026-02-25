@@ -12,81 +12,90 @@ body{
 margin:0;
 font-family:'Segoe UI',sans-serif;
 background:linear-gradient(135deg,#b7f8db,#50a962);
-min-height:100vh;
+height:100vh;
 display:flex;
 flex-direction:column;
+justify-content:center;
 align-items:center;
+overflow:hidden;
 }
 
+/* HEADER */
 .header{
-text-align:center;
-margin-top:60px;
+display:flex;
+align-items:center;
+gap:12px;
 color:#064e3b;
+margin-bottom:20px;
 }
 
+/* LOGO LEFT SIDE */
 .logo{
-font-size:60px;
-animation:float 3s ease-in-out infinite;
-}
-
-@keyframes float{
-0%{transform:translateY(0px);}
-50%{transform:translateY(-10px);}
-100%{transform:translateY(0px);}
-}
-
-.title{
 font-size:45px;
+}
+
+/* TITLE */
+.title{
+font-size:40px;
 font-weight:bold;
-margin-top:10px;
 }
 
+/* SUBTITLE */
 .subtitle{
-font-size:20px;
-margin-top:5px;
-margin-bottom:40px;
+text-align:center;
+font-size:18px;
+margin-bottom:30px;
+color:#065f46;
 }
 
+/* GRID */
 .grid{
-width:80%;
+width:90%;
 max-width:900px;
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:20px;
-padding-bottom:40px;
+gap:15px;
 }
 
+/* CARDS */
 .card{
 background:white;
-padding:18px;
-border-radius:12px;
+padding:16px;
+border-radius:10px;
 text-decoration:none;
 color:#065f46;
 font-weight:600;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:18px;
-box-shadow:0 6px 15px rgba(0,0,0,0.1);
+font-size:17px;
+box-shadow:0 5px 12px rgba(0,0,0,0.15);
 transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-5px);
 background:#d1fae5;
-box-shadow:0 10px 25px rgba(0,0,0,0.2);
+transform:scale(1.03);
 }
 
+/* FOOTER */
 .footer{
-margin-bottom:30px;
-color:#064e3b;
+margin-top:15px;
 font-size:14px;
+color:#064e3b;
 }
 
+/* MOBILE */
 @media(max-width:768px){
+
 .grid{
 grid-template-columns:1fr;
 }
+
+body{
+overflow:auto;
+}
+
 }
 
 </style>
@@ -95,16 +104,20 @@ grid-template-columns:1fr;
 
 <body>
 
+<!-- HEADER -->
 <div class="header">
 
 <div class="logo">🌱</div>
 
 <div class="title">AgriMitra</div>
 
-<div class="subtitle">Government Schemes for Farmers</div>
-
 </div>
 
+<div class="subtitle">
+Government Schemes for Farmers
+</div>
+
+<!-- SCHEMES -->
 <div class="grid">
 
 <a class="card" href="https://pmkisan.gov.in/" target="_blank">💰 PM Kisan Yojana</a>
