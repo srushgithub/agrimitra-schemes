@@ -5,91 +5,123 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AgriMitra - Government Schemes</title>
+<title>AgriMitra Schemes</title>
 
 <style>
 
 body{
+
 margin:0;
 font-family:'Segoe UI',sans-serif;
+
 background:linear-gradient(135deg,#a8e6cf,#6aa84f);
-height:100vh;
+
+min-height:100vh;
+
 display:flex;
-justify-content:center;
+flex-direction:column;
 align-items:center;
-}
-
-.container{
-
-background:rgba(255,255,255,0.2);
-backdrop-filter:blur(15px);
-padding:40px;
-border-radius:20px;
-width:700px;
-box-shadow:0 10px 30px rgba(0,0,0,0.2);
-text-align:center;
+justify-content:center;
 
 }
+
+/* LOGO */
 
 .logo{
 
-font-size:60px;
-margin-bottom:10px;
+font-size:70px;
+animation:float 3s ease-in-out infinite;
 
 }
+
+@keyframes float{
+
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+
+}
+
+/* TITLE */
 
 .title{
 
-font-size:40px;
+font-size:48px;
 font-weight:bold;
-color:#063;
+color:#064;
+
+margin-top:10px;
 
 }
+
+/* SUBTITLE */
 
 .subtitle{
 
 font-size:20px;
-margin-bottom:30px;
 color:#033;
+margin-bottom:40px;
 
 }
+
+/* GRID */
 
 .grid{
 
 display:grid;
-grid-template-columns:1fr 1fr;
-gap:15px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+
+width:80%;
+max-width:800px;
 
 }
 
+/* CARD */
+
 .card{
 
-background:white;
-padding:15px;
-border-radius:10px;
-transition:0.3s;
-cursor:pointer;
+background:rgba(255,255,255,0.85);
+
+padding:18px;
+
+border-radius:15px;
+
 text-decoration:none;
+
 color:#064;
 
 font-weight:600;
 
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
+font-size:18px;
+
+text-align:center;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+
+transition:0.3s;
 
 }
+
+/* HOVER EFFECT */
 
 .card:hover{
 
-transform:scale(1.05);
-background:#e8f5e9;
+transform:translateY(-5px) scale(1.05);
+
+background:#ffffff;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.25);
 
 }
 
+/* FOOTER */
+
 .footer{
 
-margin-top:20px;
-font-size:14px;
+margin-top:40px;
 color:#033;
+font-size:14px;
 
 }
 
@@ -99,13 +131,12 @@ color:#033;
 
 <body>
 
-<div class="container">
-
 <div class="logo">🌱</div>
 
 <div class="title">AgriMitra</div>
 
 <div class="subtitle">Government Schemes for Farmers</div>
+
 
 <div class="grid">
 
@@ -151,11 +182,10 @@ color:#033;
 
 </div>
 
+
 <div class="footer">
 
 AgriMitra © 2026 | Farmer Support System
-
-</div>
 
 </div>
 
